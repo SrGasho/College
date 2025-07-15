@@ -1,0 +1,33 @@
+version: '3.8'
+
+services:
+  postgres_db:
+    image: postgres:latest
+    container_name: postgres_db
+    environment:
+      POSTGRES_DB: amazon
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: admin123
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  mysql_db:
+    image: mysql:latest
+    container_name: mysql_db
+    environment:
+      MYSQL_DATABASE: amazon
+      MYSQL_USER: esequele
+      MYSQL_PASSWORD: admin123
+      MYSQL_ROOT_PASSWORD: admin123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+volumes:
+  postgres_data:
+   driver: local
+  mysql_data:
+    driver: local
