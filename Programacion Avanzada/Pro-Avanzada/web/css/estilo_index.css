@@ -1,0 +1,99 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Oswald", sans-serif;
+}
+
+.contenedor_principal {
+	width: 100%;
+	height: 100vh;
+	background-image: url(../Img/10.jpg);
+}
+
+.contenedor_titulo {
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	font-size: 40px; 
+}
+
+.contenedor_titulo h1 {
+	font-weight: 400;
+}
+
+.contenedor_frase {
+	width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor_opciones {
+    width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+
+.contenedor_opciones a {
+    width: 30%;
+	height: 100%;
+	margin-top: 40px;
+	display: flex;
+	align-items: center;
+	text-decoration: none;
+	background-color: #000;
+}
+
+.opcion1 {
+	margin-right: 20px;
+}
+
+.opcion2 {
+	margin-left: 20px;
+}
+
+.contenedor {
+	width: 100%;
+	height: 600px;
+	background-color: #000;
+    display: flex;
+    justify-content: center;
+	border: .5px solid #aaa;
+	color: transparent;
+}
+
+.contenedor:hover {
+	filter: opacity(50%);
+	color: #fff;
+	font-size: 30px;
+}
+
+
+.contenedor_consulta {
+	background-image: url(../Img/estudiante.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;	
+}
+
+
+.contenedor_registro {
+	background-image: url(../Img/estudiantes2.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+

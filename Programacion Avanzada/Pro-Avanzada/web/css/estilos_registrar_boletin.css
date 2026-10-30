@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: "Oswald", sans-serif;
+}
+
+.contenedor_principal {
+    width: 100%;
+    height: 100%;
+    background-image:url(../Img/10.jpg);
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor {
+    margin-top: 40px;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 40px;
+    border: 1px solid #000;
+    border-radius: 20px;
+}
+
+.Datos {
+    padding-bottom: 20px;
+}
+
+.Datos input {
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #000;
+    border-radius: 2px;
+    outline: none;
+    background-color: transparent;
+}
