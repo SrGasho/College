@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora con árbol binario</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <main class="page-shell">
+        <header class="hero">
+            <p class="eyebrow">Árbol binario de expresiones</p>
+            <h1>Calculadora postorden</h1>
+            <p>Construye la expresión, observa el árbol y sigue cada operación.</p>
+        </header>
+
+        <section class="panel controls-panel">
+            <label for="expression">Expresión matemática</label>
+            <div class="input-row">
+                <input id="expression" type="text" value="8 + 3 * (4 - 1)" autocomplete="off">
+                <button id="calculate-button" class="primary-button">Construir árbol</button>
+            </div>
+            <p class="hint">Operaciones disponibles: +, -, * y /. También puedes usar paréntesis y decimales.</p>
+            <div id="error-message" class="message error-message" role="alert" hidden></div>
+        </section>
+
+        <section class="panel tree-panel">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">Visualización</p>
+                    <h2>Árbol de expresión</h2>
+                </div>
+                <div class="legend">
+                    <span><i class="legend-dot number-dot"></i>Número</span>
+                    <span><i class="legend-dot operator-dot"></i>Operador</span>
+                    <span><i class="legend-dot active-dot"></i>Activo</span>
+                </div>
+            </div>
+            <div id="tree-container" class="tree-container">
+                <p class="empty-state">Construye una expresión para mostrar su árbol.</p>
+            </div>
+        </section>
+
+        <section class="two-column">
+            <article class="panel">
+                <p class="eyebrow">Recorrido</p>
+                <h2>Postorden</h2>
+                <div id="postorder-output" class="code-output">—</div>
+                <div class="action-row">
+                    <button id="next-button" disabled>Siguiente paso</button>
+                    <button id="play-button" disabled>Reproducir</button>
+                    <button id="reset-button" class="quiet-button">Reiniciar</button>
+                </div>
+            </article>
+
+            <article class="panel result-panel">
+                <p class="eyebrow">Resultado</p>
+                <h2 id="result-output">—</h2>
+                <p id="step-description" class="step-description">Todavía no se ha iniciado el recorrido.</p>
+            </article>
+        </section>
+
+        <section class="panel steps-panel">
+            <p class="eyebrow">Ejecución</p>
+            <h2>Operaciones realizadas</h2>
+            <ol id="steps-output" class="steps-list">
+                <li class="empty-state">Los pasos aparecerán después de construir el árbol.</li>
+            </ol>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='app.js') }}"></script>
+</body>
+</html>
