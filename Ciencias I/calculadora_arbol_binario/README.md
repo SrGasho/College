@@ -7,7 +7,7 @@ Calculadora web en Python que construye un árbol binario de expresión y evalú
 ```bash
 python3 -m venv .venv
 .\.venv\Scripts\python.exe -m pip install -r requirements.txt
-.venv/bin/python app.py
+.\.venv\Scripts\python.exe app.py
 ```
 
 Después abre `http://127.0.0.1:5000` en el navegador.
