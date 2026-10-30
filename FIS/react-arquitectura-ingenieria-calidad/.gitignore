@@ -1,0 +1,11 @@
+node_modules/
+dist/
+coverage/
+*.local
+.DS_Store
+.vscode/
+.idea/
+npm-debug.log*
+
+# Documentos de trabajo (diseño y plan), no forman parte del entregable
+docs/

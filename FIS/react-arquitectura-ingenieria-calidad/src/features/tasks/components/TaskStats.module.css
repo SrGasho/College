@@ -1,0 +1,16 @@
+.stats {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding-top: 4px;
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+@media (max-width: 440px) {
+  .stats {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

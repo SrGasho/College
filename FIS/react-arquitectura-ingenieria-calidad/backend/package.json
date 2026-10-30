@@ -1,0 +1,26 @@
+{
+  "name": "task-dashboard-api",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "start": "tsx src/server.ts",
+    "build": "tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "better-sqlite3": "11.8.1",
+    "cors": "2.8.5",
+    "express": "5.1.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "7.6.12",
+    "@types/cors": "2.8.17",
+    "@types/express": "5.0.1",
+    "@types/node": "22.10.5",
+    "tsx": "4.19.2",
+    "typescript": "5.7.2",
+    "vitest": "3.2.4"
+  }
+}
